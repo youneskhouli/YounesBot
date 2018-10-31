@@ -21,7 +21,7 @@ class YounesBot(discord.Client):
         if message.author.id == self.user.id:
             return
 
-        if message.content.startswith('$guess'):
+        if message.content.startswith('guess'):
             await message.channel.send('Guess a number between 1 and 10.')
 
             def is_correct(m):
